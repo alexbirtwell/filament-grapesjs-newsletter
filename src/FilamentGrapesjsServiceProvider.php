@@ -30,7 +30,10 @@ class FilamentGrapesjsServiceProvider extends PackageServiceProvider
     {
         return [
             'grapesjs' => __DIR__ . '/../resources/dist/js/grapes.min.js',
-            'filament-grapesjs-tailwindcss' => __DIR__ . '/../resources/dist/js/grapesjs-tailwind.min.js',
+            'grapesjs-preset-newsletter' => __DIR__ . '/../resources/dist/js/grapesjs-preset-newsletter.min.js',
+            'grapesjs-ckeditor' => __DIR__ . '/../resources/dist/js/grapesjs-plugin-ckeditor.min.js',
+
+            //'filament-grapesjs-tailwindcss' => __DIR__ . '/../resources/dist/js/grapesjs-tailwind.min.js',
             'filament-grapesjs' => __DIR__ . '/../resources/dist/js/grapes.js',
         ];
     }
@@ -38,7 +41,8 @@ class FilamentGrapesjsServiceProvider extends PackageServiceProvider
     {
         return  [
             'grapesjs' => __DIR__ . '/../resources/dist/css/grapes.min.css',
-            'filament-grapesjs' => __DIR__ . '/../resources/dist/css/grapes.css'
+            'filament-grapesjs' => __DIR__ . '/../resources/dist/css/grapes.css',
+            'grapesjs-preset-newsletter' => __DIR__ . '/../resources/dist/css/grapesjs-preset-newsletter.css',
         ];
     }
 }

@@ -17,7 +17,8 @@ document.addEventListener('alpine:init', () => {
                     storageManager: false,
                     loadHtml: state,
                     plugins: [
-                        "grapesjs-tailwind",
+                        'gjs-preset-newsletter',
+                        'gjs-plugin-ckeditor'
                     ],
                 });
                 this.instance.on('update', e => {
